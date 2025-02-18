@@ -1,0 +1,31 @@
+/* Apply to the container div to use Flexbox */
+.container {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Stack the divs vertically */
+    align-items: center; /* Center all divs horizontally */
+    justify-content: center; /* Center the content vertically */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Optional: Centers the text inside the h1 elements */
+}
+
+/* Optional: Style the individual divs to add spacing between them */
+.center {
+    margin: 20px 0; /* Adds vertical space between divs */
+}
+hr{
+    color:black;
+    width:80%;
+    border:1px solid black;
+    margin :20px 0;
+}
+body{
+    background-color:white;
+}
+.name{
+    color:red;
+    opacity:0;
+    transition:opacity 2s;
+}
+.name:hover{
+    opacity:1;
+}
