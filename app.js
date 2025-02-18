@@ -64,6 +64,34 @@ fifth.addEventListener("mouseleave",function(){
         fifth.removeChild(contact);  // Remove it from the container
     }
 })
-$("#mode").on("click",function(){
-    $(body).css("background-color","black")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(".button").on("click",function(){
+    $("body").css("background-color","white");
+    /**if($(body).css.backgroundColor=="white"){
+        body.style.backgroundColor="black";
+    }
+    else{
+        body.style.backgroundColor=="white"
+    }/** */
 })
+
+function changeMode(){
+    var button = document.getElementById("mode");
+    button.textContent = "Dark";
+    
+} 
