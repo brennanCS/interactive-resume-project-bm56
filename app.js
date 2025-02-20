@@ -65,22 +65,18 @@ fifth.addEventListener("mouseleave",function(){
     }
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $(".button").on("click",function(){
+    $("body").css("background-color","white");
+    if($(body).css.backgroundColor == "white"){
+        body.style.backgroundColor = "black";
+        if($(body).css.backgroundColor == "black"){
+            body.style.backgroundColor =="white"
+        };
+    }
+});
+
+
+/*$(".button").on("click",function(){
     $("body").css("background-color","white");
     /**if($(body).css.backgroundColor=="white"){
         body.style.backgroundColor="black";
@@ -88,10 +84,10 @@ $(".button").on("click",function(){
     else{
         body.style.backgroundColor=="white"
     }/** */
-})
+/*})/***
 
 function changeMode(){
     var button = document.getElementById("mode");
     button.textContent = "Dark";
     
-} 
+}/** */
