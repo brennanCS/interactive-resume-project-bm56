@@ -65,29 +65,62 @@ fifth.addEventListener("mouseleave",function(){
     }
 })
 
-$(".button").on("click",function(){
-    $("body").css("background-color","white");
-    if($(body).css.backgroundColor == "white"){
-        body.style.backgroundColor = "black";
-        if($(body).css.backgroundColor == "black"){
-            body.style.backgroundColor =="white";
-        };
-    }
-});
-
-
-/*$(".button").on("click",function(){
-    $("body").css("background-color","white");
-    /**if($(body).css.backgroundColor=="white"){
+var btn = document.getElementById("switch");
+btn.addEventListener("click", colorSwitch)
+function colorSwitch(){
+    var body = document.body;
+    if(body.style.backgroundColor=="white"){
         body.style.backgroundColor="black";
+        document.body.style.color = "white";
+        document.body.style.borderColor = "white";
+        
+    }else{
+        body.style.backgroundColor="white";
+        document.body.style.color = "black";
+        document.body.style.borderColor = "black";
     }
-    else{
-        body.style.backgroundColor=="white"
-    }/** */
-/*})/***
+}
+
+
+
 
 function changeMode(){
     var button = document.getElementById("mode");
     button.textContent = "Dark";
     
-}/** */
+}
+
+
+
+var rainContent = $('.raindrop').text();
+var rainArray = rainContent.split("");
+var rainReturn = "";
+$('.raindrop').empty();
+$.each(rainArray, function(i, v) {
+  if (v !== " ") {
+    rainReturn = rainReturn + '<span class="rd-anim-' + (Math.floor(Math.random() * 8) + 1) + '">' + v + '</span>';
+  } else {
+    rainReturn = rainReturn + v;
+  }
+});
+var rainHTML = $.parseHTML(rainReturn);
+$('.raindrop').append(rainHTML);        /**   FROM CODEPEN */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
