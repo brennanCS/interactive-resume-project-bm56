@@ -70,7 +70,6 @@ $(".button").on("click",function(){
     if($(body).css.backgroundColor == "white"){
         body.style.backgroundColor = "black";
         if($(body).css.backgroundColor == "black"){
-            body.style.backgroundColor =="white"
             body.style.backgroundColor =="white";
         };
     }
