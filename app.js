@@ -71,6 +71,7 @@ $(".button").on("click",function(){
         body.style.backgroundColor = "black";
         if($(body).css.backgroundColor == "black"){
             body.style.backgroundColor =="white"
+            body.style.backgroundColor =="white";
         };
     }
 });
